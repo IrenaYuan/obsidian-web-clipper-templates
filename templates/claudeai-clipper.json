@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "Claude",
+  "behavior": "create",
+  "noteNameFormat": "{{title}}",
+  "noteContentFormat": "# {{title}}\n\n```\n{{content|replace:(\"\\\\\\*\": \"*\", \"\\\\\\`\": \"`\")}}\n```\n\n",
+  "path": "Clippings",
+  "properties": [
+    {
+      "name": "category",
+      "value": "[[Clippings]]",
+      "type": "text"
+    },
+    {
+      "name": "title",
+      "value": "{{title}}",
+      "type": "text"
+    },
+    {
+      "name": "url",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "author",
+      "value": "{{author|split:\\\", \\\"|wikilink|join}}",
+      "type": "multitext"
+    },
+    {
+      "name": "description",
+      "value": "{{description}}",
+      "type": "text"
+    },
+    {
+      "name": "published",
+      "value": "{{published}}",
+      "type": "date"
+    },
+    {
+      "name": "created",
+      "value": "{{date}}",
+      "type": "date"
+    },
+    {
+      "name": "tags",
+      "value": "claude/conversation",
+      "type": "multitext"
+    }
+  ],
+  "triggers": [
+    "https://claude.ai/chat/"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "YouTube",
+  "behavior": "create",
+  "noteNameFormat": "{{schema:author}} – {{schema:name}}",
+  "path": "Clippings",
+  "noteContentFormat": "![{{schema:name}}]({{url}})",
+  "properties": [
+    {
+      "name": "category",
+      "value": "[[Clippings]]",
+      "type": "text"
+    },
+    {
+      "name": "title",
+      "value": "{{schema:name}}",
+      "type": "text"
+    },
+    {
+      "name": "author",
+      "value": "{{schema:author|wikilink}}",
+      "type": "multitext"
+    },
+    {
+      "name": "published",
+      "value": "{{schema:uploadDate|date:YYYY-MM-DD}}",
+      "type": "date"
+    },
+    {
+      "name": "url",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "image",
+      "value": "{{schema:thumbnailUrl|slice:0}}",
+      "type": "text"
+    },
+    {
+      "name": "created",
+      "value": "{{date}}",
+      "type": "text"
+    },
+    {
+      "name": "modified",
+      "value": "{{date}}",
+      "type": "text"
+    },
+    {
+      "name": "tags",
+      "value": "youtube, videos",
+      "type": "multitext"
+    },
+    {
+      "name": "topics",
+      "value": "",
+      "type": "multitext"
+    }
+  ],
+  "triggers": [
+    "https://www.youtube.com/watch?v="
+  ]
+}
