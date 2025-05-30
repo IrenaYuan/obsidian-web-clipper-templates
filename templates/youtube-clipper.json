@@ -39,12 +39,12 @@
     {
       "name": "created",
       "value": "{{date}}",
-      "type": "text"
+      "type": "date"
     },
     {
       "name": "modified",
       "value": "{{date}}",
-      "type": "text"
+      "type": "date"
     },
     {
       "name": "tags",
