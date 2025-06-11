@@ -1,0 +1,63 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Codepen",
+	"behavior": "create",
+	"noteContentFormat": "![]({{image}})\n",
+	"properties": [
+		{
+			"name": "category",
+			"value": "[[Clippings]]",
+			"type": "multitext"
+		},
+		{
+			"name": "type",
+			"value": "[[Codepen]]",
+			"type": "multitext"
+		},
+		{
+			"name": "author",
+			"value": "{{author|split:\\\", \\\"|wikilink|join}}",
+			"type": "multitext"
+		},
+		{
+			"name": "url",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "thumbnail",
+			"value": "",
+			"type": "text"
+		},
+		{
+			"name": "published",
+			"value": "{{published}}",
+			"type": "date"
+		},
+		{
+			"name": "tags",
+			"value": "clippings, codepen",
+			"type": "multitext"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "rating",
+			"value": "",
+			"type": "number"
+		},
+		{
+			"name": "topics",
+			"value": "",
+			"type": "multitext"
+		}
+	],
+	"triggers": [
+		"https://codepen.io/*/pen/"
+	],
+	"noteNameFormat": "{{title}}",
+	"path": "Clippings"
+}

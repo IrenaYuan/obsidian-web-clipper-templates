@@ -1,0 +1,56 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Default",
+	"behavior": "create",
+	"noteContentFormat": "{{content}}",
+	"properties": [
+		{
+			"name": "category",
+			"value": "[[Clippings]]",
+			"type": "multitext"
+		},
+		{
+			"name": "title",
+			"value": "{{title}}",
+			"type": "text"
+		},
+		{
+			"name": "url",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "author",
+			"value": "{{author|split:\\\", \\\"|wikilink|join}}",
+			"type": "multitext"
+		},
+		{
+			"name": "published",
+			"value": "{{published}}",
+			"type": "date"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "description",
+			"value": "{{description}}",
+			"type": "text"
+		},
+		{
+			"name": "tags",
+			"value": "clippings",
+			"type": "multitext"
+		},
+		{
+			"name": "topics",
+			"value": "",
+			"type": "text"
+		}
+	],
+	"triggers": [],
+	"noteNameFormat": "{{title}}",
+	"path": "Clippings"
+}
