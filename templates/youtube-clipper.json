@@ -42,11 +42,6 @@
       "type": "date"
     },
     {
-      "name": "modified",
-      "value": "{{date}}",
-      "type": "date"
-    },
-    {
       "name": "tags",
       "value": "youtube, videos",
       "type": "multitext"
