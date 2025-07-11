@@ -7,7 +7,7 @@
   "noteContentFormat": "![{{schema:name}}]({{url}})",
   "properties": [
     {
-      "name": "category",
+      "name": "categories",
       "value": "[[Clippings]]",
       "type": "text"
     },

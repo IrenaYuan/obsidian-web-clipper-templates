@@ -5,7 +5,7 @@
 	"noteContentFormat": "![]({{image}})\n",
 	"properties": [
 		{
-			"name": "category",
+			"name": "categories",
 			"value": "[[Clippings]]",
 			"type": "multitext"
 		},
